@@ -1,0 +1,34 @@
+buildscript {
+    dependencies {
+        classpath "org.springframework:springloaded:1.2.6.RELEASE"
+    }
+}
+
+plugins {
+    id "org.springframework.boot" version "1.4.3.RELEASE"
+}
+
+jar {
+    baseName = "springloaded_with_gradle"
+    version = "0.0.1-SNAPSHOT"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.codehaus.groovy:groovy"
+    compile "org.springframework.boot:spring-boot-starter-web"
+}
+
+apply plugin: 'idea'
+idea {
+    module {
+        inheritOutputDirs = false
+        outputDir = file("$buildDir/classes/main/")
+    }
+}
