@@ -5,16 +5,13 @@ buildscript {
 }
 
 plugins {
-    id "org.springframework.boot" version "1.4.3.RELEASE"
+    id "org.springframework.boot" version "1.5.2.RELEASE"
 }
 
 jar {
     baseName = "springloaded_with_gradle"
     version = "0.0.1-SNAPSHOT"
 }
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
