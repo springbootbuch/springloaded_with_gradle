@@ -1,6 +1,7 @@
 buildscript {
     dependencies {
-        classpath "org.springframework:springloaded:1.2.6.RELEASE"
+        classpath "org.springframework:" + 
+            "springloaded:1.2.6.RELEASE"
     }
 }
 
@@ -19,7 +20,8 @@ repositories {
 
 dependencies {
     compile "org.codehaus.groovy:groovy"
-    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:" +
+        "spring-boot-starter-web"
 }
 
 apply plugin: 'idea'
